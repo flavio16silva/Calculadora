@@ -1,0 +1,52 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+  --cor-primaria:lightcoral;
+  --cor-sercudaria:dimGrey;
+  --cor-terciaria:gainsboro;
+}
+
+
+body {
+  /*background-color:var(--cor-primaria);*/
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+
+}
+
+#container {
+  height: 525px;
+  width: 360px;
+  margin: 100px auto; /*vertical e horizontal*/
+  background:rgba(58, 36, 136, 0.239);
+  box-shadow: 1px 1px 1px var(--cor-terciaria);
+  border-radius: 20px;
+}
+
+/*h1*/
+.title {
+  background: var(--cor-terciaria);
+  color:var(--cor-sercudaria);
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  text-align: center;
+}
+
+/*Formulário*/
+.tipo {
+  padding-left:20px;
+
+}
+
+/*Inputs do formulário*/
+.forminput {
+  background: white;
+  width: 40px;
+  padding: 5px 5px 8px 8px;
+}
