@@ -12,20 +12,22 @@
 </head>
 <body>
 
+  <!--Espaço da Calculadora-->
   <main id="container">
     <h1 class="title">Calculadora de Gorjetas</h1>
-    <form class="tipo">
-      <label for="bill"> <!--Conta em inglês-->
+    <form class="tipo" id="tipoForm">
+      <label for="bill"> <!--"Conta" em inglês-->
         <p>Qual o valor da conta?</p>
       </label>
       <p>
-        R$ <input type="number" placeholder="100" name="bill" id="bill" class="forminput"> 
+        R$ <input type="number" placeholder="100" name="bill" id="bill" class="forminput" required> 
       </p>
       <label for="serviceQual">
         <p>O que achou do nosso serviço?</p>
       </label>
       <p>
-        <select name="serviceQual" id="serviceQual" class="formiSelect">
+        <!--Select: do serviço-->
+        <select name="serviceQual" id="serviceQual" class="formSelect">
           <option disabled selected value="0"> == Escolha uma opção == </option>
             <option value="0.3">30% - Incrivel</option>
             <option value="0.2">20% - Bom</option>
@@ -40,21 +42,29 @@
         <p>Quantas pessoas vão dividir a conta?</p>
       </label>
       <p>
-        <input type="number" placeholder="1" name="people" id="people" class="forminput"> pessoa(s)
+        <input type="number" placeholder="1" name="people" id="people" class="forminput" required> pessoa(s)
       </p>
 
-      <button type="submit" class="formsubmit">Calcular</button>
+      <!--Botão Calcular-->
+      <button type="submit" class="formsubmit">Calcular!</button>
     </form>
 
+    <!--Retorno da Gorjeta-->
+    <section id="total">
+      Gorjeta total:
+      R$ <span id="tip">0.00 cada</span>
+      <span id="each">por pessoa</span>
+    </section>
 
+    <!--Rodapé-->
     <section class="dev">
       <p>Calculadora desenvolvida por Flávio Leite da Silva</p>
     </section>
 
-   
   </main>
 
- 
+  <!--Importando o JavaScript-->
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
