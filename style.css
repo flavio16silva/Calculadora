@@ -25,14 +25,14 @@ body {
   border-radius: 20px;
 }
 
-/*h1*/
+/*h1 - Calculadora de Gorjetas*/
 .title {
   background: var(--cor-terciaria);
   color:var(--cor-sercudaria);
   padding: 20px;
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bold;
   border-top-left-radius:20px;
   border-top-right-radius:20px;
   text-align: center;
@@ -41,6 +41,7 @@ body {
 /*Formulário*/
 .tipo {
   padding-left:20px;
+  padding-right: 20px;
 
 }
 
@@ -48,5 +49,57 @@ body {
 .forminput {
   background: white;
   width: 40px;
-  padding: 5px 5px 8px 8px;
+  padding: 5px 5px 8px 8px; 
+  border-radius: 5px;
 }
+
+/*Em foco - uso da pseudo-classe*/
+.forminput:focus {
+  border: 3px solid var(--cor-primaria);
+  outline:none;
+}
+
+.formiSelect {
+  width: 180px;
+  padding: 5px;
+  font-size:12px;
+  border-radius: 5px;
+}
+
+/*Em foco - uso da pseudo-classe*/
+.formiSelect:focus {
+  border: 3px solid var(--cor-primaria);
+  outline:none;
+}
+
+.formsubmit {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background-color: var(--cor-primaria);
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size:17px;
+  color:white;
+  box-shadow: 1px 1px 1px var(--cor-primaria); 
+ 
+}
+
+.dev {
+  background-color:var(--cor-terciaria) ;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin:104px auto;
+
+}
+
+section > p {
+  color: var(--cor-sercudaria);
+  font-size:9px;
+  text-align: center;
+  padding: 5px;
+}
+
+
