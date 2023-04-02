@@ -16,17 +16,17 @@
     <h1 class="title">Calculadora de Gorjetas</h1>
     <form class="tipo">
       <label for="bill"> <!--Conta em inglês-->
-        <p>Quanto ficou a conta?</p>
+        <p>Qual o valor da conta?</p>
       </label>
       <p>
         R$ <input type="number" placeholder="100" name="bill" id="bill" class="forminput"> 
       </p>
       <label for="serviceQual">
-        <p>Como foi seu serviço?</p>
+        <p>O que achou do nosso serviço?</p>
       </label>
       <p>
-        <select name="serviceQual" id="serviceQual" class="forminput">
-          <option disabled selected value="0">Escolha uma opção</option>
+        <select name="serviceQual" id="serviceQual" class="formiSelect">
+          <option disabled selected value="0"> == Escolha uma opção == </option>
             <option value="0.3">30% - Incrivel</option>
             <option value="0.2">20% - Bom</option>
             <option value="0.15">15% - Aceitável</option>
@@ -43,8 +43,18 @@
         <input type="number" placeholder="1" name="people" id="people" class="forminput"> pessoa(s)
       </p>
 
-      <button type="submit">Calcular</button>
+      <button type="submit" class="formsubmit">Calcular</button>
     </form>
+
+
+    <section class="dev">
+      <p>Calculadora desenvolvida por Flávio Leite da Silva</p>
+    </section>
+
+   
   </main>
+
+ 
+
 </body>
 </html>
