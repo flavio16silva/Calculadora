@@ -8,14 +8,18 @@
   --cor-terciaria:gainsboro;
 }
 
-
+/*Corpo da Calculadora*/
 body {
   /*background-color:var(--cor-primaria);*/
+  padding:0;
+  margin:0;
+  height: 100%;
   font-size: 15px;
   font-family: Poppins, sans-serif;
 
 }
 
+/*Espaço contido da Calculadora*/
 #container {
   height: 525px;
   width: 360px;
@@ -59,7 +63,8 @@ body {
   outline:none;
 }
 
-.formiSelect {
+/*Escolha uma opção - Select*/
+.formSelect {
   width: 180px;
   padding: 5px;
   font-size:12px;
@@ -67,16 +72,17 @@ body {
 }
 
 /*Em foco - uso da pseudo-classe*/
-.formiSelect:focus {
+.formSelect:focus {
   border: 3px solid var(--cor-primaria);
   outline:none;
 }
 
+/*Botão Calcular*/
 .formsubmit {
   text-transform: uppercase;
   font-weight: bold;
   display: block;
-  margin: 30px auto;
+  margin: 25px auto;
   background-color: var(--cor-primaria);
   border-radius: 5px;
   width: 200px;
@@ -87,19 +93,37 @@ body {
  
 }
 
+/*Gorjeta*/
+#total {
+  font-size: 20px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+/*Rodapé*/
 .dev {
+
   background-color:var(--cor-terciaria) ;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin:104px auto;
+  margin: 124px auto;
+  position: absolute;
+  top:460px;
+  width: 360px;
+ 
+  
+
+ 
 
 }
 
+/*Rodapé - paragrafo*/
 section > p {
   color: var(--cor-sercudaria);
   font-size:9px;
   text-align: center;
   padding: 5px;
+ 
 }
 
 
