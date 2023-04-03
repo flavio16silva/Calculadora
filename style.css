@@ -40,7 +40,23 @@ body {
   border-top-left-radius:20px;
   border-top-right-radius:20px;
   text-align: center;
+ 
 }
+
+/*Section da Imagem*/
+.tip {
+  position: absolute;
+  top: 120px;
+
+ }
+
+/*Imagem*/
+.image {
+  width:40px;
+  height: 40px;
+}
+
+
 
 /*Formulário*/
 .tipo {
@@ -95,9 +111,13 @@ body {
 
 /*Gorjeta*/
 #total {
+  position: relative;
+  bottom:10px;
   font-size: 20px;
   margin-top: 3px;
+  margin-bottom: 25px;
   text-align: center;
+  
 }
 
 /*Rodapé*/
@@ -109,11 +129,7 @@ body {
   margin: 124px auto;
   position: absolute;
   top:460px;
-  width: 360px;
- 
-  
-
- 
+  width: 360px; 
 
 }
 
