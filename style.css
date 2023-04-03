@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 :root{
-  --cor-primaria:lightcoral;
-  --cor-sercudaria:dimGrey;
+  --cor-primaria:rgba(240, 128, 128, 0.702);
+  --cor-sercudaria:rgb(205, 166, 243);
   --cor-terciaria:gainsboro;
 }
 
 /*Corpo da Calculadora*/
 body {
-  /*background-color:var(--cor-primaria);*/
+  background-color:var(--cor-primaria);
   padding:0;
   margin:0;
   height: 100%;
@@ -24,8 +24,7 @@ body {
   height: 525px;
   width: 360px;
   margin: 100px auto; /*vertical e horizontal*/
-  background:rgba(58, 36, 136, 0.239);
-  box-shadow: 1px 1px 1px var(--cor-terciaria);
+  background:rgba(53, 8, 217, 0.239); 
   border-radius: 20px;
 }
 
@@ -39,7 +38,7 @@ body {
   font-weight: bold;
   border-top-left-radius:20px;
   border-top-right-radius:20px;
-  text-align: center;
+  text-align: center;  
  
 }
 
@@ -55,8 +54,6 @@ body {
   width:40px;
   height: 40px;
 }
-
-
 
 /*Formulário*/
 .tipo {
@@ -106,6 +103,7 @@ body {
   font-size:17px;
   color:white;
   box-shadow: 1px 1px 1px var(--cor-primaria); 
+  letter-spacing: 3px;
  
 }
 
