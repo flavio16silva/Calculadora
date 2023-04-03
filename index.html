@@ -14,7 +14,16 @@
 
   <!--Espaço da Calculadora-->
   <main id="container">
+ 
     <h1 class="title">Calculadora de Gorjetas</h1>
+
+    <section class="tip">
+      <picture >
+        <img src="image/tips.png" alt="gorjeta" class="image">
+      </picture>
+    </section>
+  
+ 
     <form class="tipo" id="tipoForm">
       <label for="bill"> <!--"Conta" em inglês-->
         <p>Qual o valor da conta?</p>
@@ -26,7 +35,7 @@
         <p>O que achou do nosso serviço?</p>
       </label>
       <p>
-        <!--Select: do serviço-->
+        <!--Select: do serviço com percentagens-->
         <select name="serviceQual" id="serviceQual" class="formSelect">
           <option disabled selected value="0"> == Escolha uma opção == </option>
             <option value="0.3">30% - Incrivel</option>
@@ -41,6 +50,7 @@
       <label for="people">
         <p>Quantas pessoas vão dividir a conta?</p>
       </label>
+      <!--Input das pessoas que irão dividir a conta-->
       <p>
         <input type="number" placeholder="1" name="people" id="people" class="forminput" required> pessoa(s)
       </p>
@@ -52,7 +62,7 @@
     <!--Retorno da Gorjeta-->
     <section id="total">
       Gorjeta total:
-      R$ <span id="tip">0.00 cada</span>
+      R$ <span id="tip">0.00</span>
       <span id="each">por pessoa</span>
     </section>
 
